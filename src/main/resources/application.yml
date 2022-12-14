@@ -6,6 +6,6 @@ spring:
     gateway:
       routes:
         - id: cinemaModule
-          uri: http://localhost:8081/
+          uri: https://challenge6-production-49c1.up.railway.app:8081/
           predicates:
             - Path=/api/v1/cinema/**

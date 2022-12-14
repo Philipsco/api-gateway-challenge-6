@@ -11,7 +11,7 @@ public class SpringCloudConfig {
     public RouteLocator gatewayRoutes(RouteLocatorBuilder builder){
         return builder.routes()
                 .route(r -> r.path("/api/v1/cinema/**")
-                        .uri("http://localhost:8081/"))
+                        .uri("https://challenge6-production-49c1.up.railway.app:8081/"))
                 .build();
     }
 }
